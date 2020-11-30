@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+        <variable
+            name="listener"
+            type="com.jydp.obqr.listener.LoginListener" />
+    </data>
+
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/block_bg"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/tab1_zhodan_2"
+                        android:textColor="@color/text_bg"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tag_rank"
+                        android:layout_below="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_rank"
+                        android:text="@string/tab1_ranking"
+                        android:textColor="@color/color_4139"
+                        android:layout_marginTop="-20dp"
+                        android:textSize="11dp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_tag_rank"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/tab1_rankNumber"
+                        android:textColor="@color/color_4139"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_rank"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="21dp"
+                        android:minHeight="8dp"
+                        android:textSize="8dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#8B7159" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/tv_tag_hua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="7dp"
+                        android:background="@mipmap/taohua" />
+
+                    <TextView
+                        android:id="@+id/tv_tableNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/tv_tag_hua"
+                        android:text="@string/tab1_tableNumber"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tableNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/tv_tableNum"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <ImageView
+                        android:id="@+id/tv_tag_hua2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="61dp"
+                        android:layout_toRightOf="@+id/tv_tableNumber"
+                        android:background="@mipmap/taohua" />
+
+                    <TextView
+                        android:id="@+id/tv_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/tv_tag_hua2"
+                        android:text="@string/tab1_peopleNumber"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_peopleNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/tv_people"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/listbg"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_term"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/tab1_term"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_Varieties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="28dp"
+                        android:layout_toRightOf="@+id/tv_term"
+                        android:text="@string/tab1_Varieties"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_Number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="98dp"
+                        android:layout_toRightOf="@+id/tv_Varieties"
+                        android:text="@string/tab1_Number"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_Amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="43dp"
+                        android:layout_toRightOf="@+id/tv_Number"
+                        android:text="@string/tab1_Amount"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/listbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="@string/tab1_term"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tab1_Varieties"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:text="@string/tab1_Number"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tab1_Amount"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tab1_list_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/tab2_list_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+<!--                <ListView-->
+<!--                    android:id="@+id/tab1_list_left_guqing"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="250dp" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_tag_sum_star"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/tab1_sum_star"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_sumNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_tag_sum_star"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_tag_sum_star"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv_tag_sum_star"
+                        android:textColor="@color/color_4139"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_tag_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_tag_sum_star"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_sumNumber"
+                        android:layout_toRightOf="@+id/tv_sumNumber"
+                        android:text="@string/tab1_sumTerm"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_allMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_tag_sum_star"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tag2"
+                        android:textColor="@color/color_4139"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_allMoney"
+                        app:layout_constraintRight_toLeftOf="@+id/tv_allMoney"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/tv_tag_sum"
+                        android:text="@string/tab1_totalPrice"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/tab1_status_0_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+                    <TextView
+                        android:id="@+id/dayin_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_qrcode"
+                        android:text="@string/tab1_erweima"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/kaitai_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/open_seat"
+                        android:text="@string/tab1_kaitai"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/tab1_status_2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:fillViewport="true">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+                    <TextView
+                        android:id="@+id/chedan_btn"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_cancel_order"
+                        android:text="@string/tab1_cancelOrder"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/tuicai_btn"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_cancel"
+                        android:text="@string/tab1_returnVegetables"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/dayin_2_btn"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_qrcode"
+                        android:text="@string/tab1_erweima"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+
+                    <TextView
+                        android:id="@+id/dayin_3_btn"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_print"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab1_print"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/aa_btn"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_aa"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab1_aa"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/tab1_daicai_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+                    <TextView
+                        android:id="@+id/xiadan_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_order"
+                        android:text="@string/tab1_placeOrder"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/qingkong_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_cancel_order"
+                        android:text="@string/qingkong"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/tuicai_2_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/icon_cancel"
+                        android:text="@string/tab1_returnVegetables"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+
+                    <TextView
+                        android:id="@+id/qr_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/icon_qrcode"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab1_print"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+
+</layout>

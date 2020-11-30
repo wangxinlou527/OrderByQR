@@ -1,0 +1,222 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">飲食店管理端末</string>
+
+    <!--登录页的设置-->
+    <string name="login_title" translatable="false">前厅管理端</string>
+    <string name="login" translatable="false">登录</string>
+    <string name="use_name" translatable="false">用户名</string>
+    <string name="use_paw" translatable="false">密码</string>
+    <string name="log_language_sett" translatable="false">语言设置</string>
+    <string name="login_lang_chinese" translatable="false">中文简体</string>
+    <string name="login_lang_chinese_tw" translatable="false">中文繁体</string>
+    <string name="login_lang_english" translatable="false">English</string>
+    <string name="login_lang_japan" translatable="false">日本</string>
+    <string name="login_lang_han" translatable="false">韩语</string>
+
+    <string name="take_food" translatable="false">レジ</string>
+    <string name="reserve" translatable="false">予約</string>
+    <string name="message" translatable="false">新着</string>
+    <string name="guqing" translatable="false">在庫設定</string>
+    <string name="nothing" translatable="false">会計履歴</string>
+    <string name="setting" translatable="false">設定</string>
+
+    <!--    收银-->
+    <string name="tab1_zhodan" translatable="false">注文履歴</string>
+    <string name="tab1_zhodan_2" translatable="false">注文リスト</string>
+    <string name="tab1_diancai" translatable="false">メニュー</string>
+    <string name="tab1_jiezhang" translatable="false">会計</string>
+    <string name="tab1_placeOrder" translatable="false">注文</string>
+    <string name="tab1_cancelOrder" translatable="false">取消(注文)</string>
+    <string name="tab1_returnVegetables" translatable="false">取消(単品)</string>
+    <string name="tab1_print" translatable="false">PO</string>
+    <string name="tab1_kaitai" translatable="false">席取り</string>
+    <string name="tab1_erweima" translatable="false">PO(QRコード)</string>
+    <string name="tab1_peo" translatable="false">请输入就餐人数</string>
+    <string name="tab1_pay_type" translatable="false">支払い方法</string>
+    <string name="tab1_taxation" translatable="false">消費税：</string>
+    <string name="tab1_pay" translatable="false">小計：</string>
+    <string name="tab1_pay_net" translatable="false">合計金額（税込）：</string>
+    <string name="tab1_pay_rece" translatable="false">お会計</string>
+    <string name="tab1_zhekou_list" translatable="false">折扣列表：</string>
+    <string name="tab1_pay_type_list" translatable="false">支付列表：</string>
+    <string name="tab1_hint_money" translatable="false">金額を入力してください</string>
+    <string name="tab1_aa" translatable="false">AA</string>
+    <string name="jujue" translatable="false">拒绝</string>
+    <string name="tongyi" translatable="false">同意</string>
+    <string name="zhuohao" translatable="false">テーブル：</string>
+    <string name="xiaofeishui" translatable="false">消费税等：</string>
+    <string name="print_qianting" translatable="false">打印前厅</string>
+    <string name="print_houchu" translatable="false">打印后厨</string>
+    <string name="yichuli" translatable="false">已处理</string>
+    <string name="qingkong" translatable="false">クリア</string>
+    <string name="tab1_hint_tv_1" translatable="false">テーブルを選んでください</string>
+    <string name="tab1_hint_tv_2" translatable="false">正しい値を入力してください</string>
+    <string name="tab1_hint_tv_3" translatable="false">メニューを選んでください</string>
+    <string name="tab1_coupon_tv_1" translatable="false">原価</string>
+    <string name="tab1_coupon_tv_2" translatable="false">割り引き</string>
+    <string name="tab1_coupon_tv_3" translatable="false">クーポン</string>
+
+    <!-- Tab3预定-->
+    <string name="tab3_New_Reserve" translatable="false">予約追加</string>
+    <string name="tab3_New_LookReserve" translatable="false">查看预定</string>
+
+    <string name="tab3_BookingForm" translatable="false">お店予約</string>
+
+    <string name="tab3_allMoney" translatable="false">￥ 0.0</string>
+    <string name="tab3_ReserveTime" translatable="false">预定时间:</string>
+    <string name="tab3_Remarks" translatable="false">备注:</string>
+
+
+    <string name="tab3_new_Contacts" translatable="false">お客様</string>
+    <string name="tab3_new__ContactsPhone" translatable="false">連絡先</string>
+    <string name="tab3_new__RemarksTime" translatable="false">予約時間帯</string>
+    <string name="tab3_new__people" translatable="false">人数</string>
+    <string name="tab3_new__table" translatable="false">座席番号</string>
+    <string name="tab3_new__Remarks" translatable="false">備考欄</string>
+    <string name="tab3_new__State" translatable="false">ステータス</string>
+
+    <string name="tab3_hint_Contacts" translatable="false">氏名をご入力ください</string>
+    <string name="tab3_hint__ContactsPhone" translatable="false">電話番号をご入力してください</string>
+    <string name="tab3_hint__RemarksTime" translatable="false">時間をお選びください</string>
+    <string name="tab3_hint__people" translatable="false">人数をご入力してください</string>
+    <string name="tab3_hint__table" translatable="false">テーブルをお選びください</string>
+    <string name="tab3_hint__Remarks" translatable="false">コメントをご入力してください</string>
+    <string name="tab3_hint__stat" translatable="false">请输入状态</string>
+
+    <!--预定-->
+    <string name="tab1_table_number" translatable="false">1</string>
+    <string name="tab1_people_number" translatable="false">10人</string>
+    <string name="tab1_long_time" translatable="false">130分钟</string>
+    <string name="tab1_contentNumber" translatable="false">大厅一号</string>
+
+    <string name="tab1_Varieties" translatable="false">品名</string>
+    <string name="tab1_Number" translatable="false">個数</string>
+    <string name="tab1_Amount" translatable="false">価格</string>
+    <string name="tab1_rankNumber" translatable="false">3</string>
+    <string name="tab1_sum_star" translatable="false">合計</string>
+    <string name="tab1_sumNumber" translatable="false">4</string>
+    <string name="tab1_sumTerm" translatable="false">品</string>
+    <string name="tab1_totalPrice" translatable="false">合計金額:</string>
+    <string name="tab1_allMoney" translatable="false">￥ 1688</string>
+    <string name="tab1_ranking" translatable="false">No.</string>
+    <string name="tab1_add_order" translatable="false">新增订单</string>
+
+    <string name="tab2_stutas_1" translatable="false">予約中</string>
+    <string name="tab2_stutas_2" translatable="false">来店済み</string>
+    <string name="tab2_stutas_3" translatable="false">キャンセル済</string>
+    <string name="tab2_zhuohaoyilan" translatable="false">予約一覧</string>
+    <string name="tab2_queren" translatable="false">確認</string>
+    <string name="tab2_telname" translatable="false">TEL/お客様名:</string>
+    <string name="tab2_tel_hint" translatable="false">内容を選んでください</string>
+    <string name="tab2_time" translatable="false">予約時間帯</string>
+    <string name="tab2_btn_1" translatable="false">戻る</string>
+    <string name="tab2_btn_2" translatable="false">確認</string>
+    <string name="tab2_no_yuding_txt" translatable="false">予約がありません</string>
+
+    <string name="tab2_hint_1_txt" translatable="false">正しい番号を入力してください</string>
+    <string name="tab2_hint_2_txt" translatable="false">正しい人数を入力してください</string>
+
+    <!--    tab5已结账单的左边-->
+    <string name="tab6_Settlement" translatable="false">已结账单</string>
+    <string name="tab6_xiaox" translatable="false">消息详情</string>
+    <string name="tab1_time" translatable="false">2019-09-23  11：53</string>
+    <string name="tab1_tableNumber" translatable="false">テーブル:</string>
+    <string name="tab1_peopleNumber" translatable="false">人数:</string>
+    <string name="peopleNumber" translatable="false">人数:</string>
+    <string name="tab1_term" translatable="false">No.</string>
+    <string name="tab1_phone" translatable="false">連絡先：</string>
+    <string name="tab1_up_time" translatable="false">预定时间：</string>
+    <string name="tab1_note" translatable="false">備考欄：</string>
+    <string name="yishouwan" translatable="false">已售完</string>
+    <string name="weishouwan" translatable="false">未售完</string>
+    <string name="shanchu" translatable="false">删除</string>
+
+    <string name="token_out" translatable="false">权限丢失，请重新登录！</string>
+    <string name="is_chedan" translatable="false">注文をキャンセルしますか</string>
+    <string name="is_tuicai" translatable="false">キャンセルしてもよろしいでしょうか</string>
+    <string name="is_qingkong" translatable="false">全部削除しますか</string>
+    <string name="str_confirm" translatable="false">確認</string>
+    <string name="cancel" translatable="false">戻る</string>
+    <string name="is_kaipiao" translatable="false">レシートを印刷しますか</string>
+
+    //printer
+    <string name="str_printer_conn_normal">Printer connected normal</string>
+    <string name="str_printer_out_of_paper">Printer out of paper</string>
+    <string name="str_printer_open_cover">Printer open cover</string>
+    <string name="str_printer_error">Printer error</string>
+    <string name="str_state">State: </string>
+    <string name="str_printer_printmode_esc">Print Mode:ESC</string>
+    <string name="str_printer_printmode_tsc">Print Mode:TSC</string>
+    <string name="str_printer_printmode_cpcl">Print Mode:CPCL</string>
+    <string name="str_disconnect" translatable="false">打印失败，请检查ip或网络连接...</string>
+
+
+    <!--    setting-->
+    <string name="setting_zhunbei" translatable="false">準備金</string>
+    <string name="setting_riji" translatable="false">日計表印刷</string>
+    <string name="setting_yuyan" translatable="false">言語設定</string>
+    <string name="setting_printer" translatable="false">プリンター設定</string>
+    <string name="setting_logout" translatable="false">ログアウト</string>
+    <string name="setting_zhunbei_tv_1" translatable="false">入金金額:</string>
+    <string name="setting_zhunbei_tv_2" translatable="false">担当者:</string>
+    <string name="setting_zhunbei_tv_3" translatable="false">コメント:</string>
+    <string name="str_confirm_2" translatable="false">確認</string>
+    <string name="cancel_2" translatable="false">戻る</string>
+    <string name="setting_logou_tv_1" translatable="false">お疲れ様でした。</string>
+    <string name="setting_logou_tv_2" translatable="false">ログアウトしてもよろしいでしょうか？</string>
+    <string name="setting_dayin_tv" translatable="false">レジ用プリンタ</string>
+    <string name="setting_riji_tv_1" translatable="false">売上合計額(税込):</string>
+    <string name="setting_riji_tv_2" translatable="false">準備金:</string>
+    <string name="setting_riji_tv_3" translatable="false">引き出し金額:</string>
+    <string name="setting_riji_tv_4" translatable="false">営業終了:</string>
+    <string name="setting_riji_tv_5" translatable="false">入金方式:</string>
+    <string name="setting_riji_tv_6" translatable="false">日計表印刷</string>
+    <string name="setting_riji_tv_7" translatable="false">現金:</string>
+    <string name="setting_zhunbei_hint" translatable="false">準備金を入れました</string>
+
+    <string name="item_shenggyu" translatable="false">残り</string>
+
+    <!--    消息-->
+    <string name="tab3_hint" translatable="false">メッセージを見逃さないで下さい~</string>
+    <string name="tab3_btn_1" translatable="false">未処理</string>
+    <string name="tab3_btn_2" translatable="false">完了</string>
+    <string name="tab3_item_1" translatable="false"> オーダー</string>
+    <string name="tab3_item_2" translatable="false"> 呼び出し</string>
+    <string name="tab3_btn_3" translatable="false">受取</string>
+    <string name="tab3_btn_4" translatable="false">拒否</string>
+    <string name="tab3_btn_5" translatable="false">完了</string>
+    <string name="tab3_btn_6" translatable="false">PO(請求書)</string>
+    <string name="tab3_btn_7" translatable="false">PO(内部)</string>
+    <string name="tab3_btn_hint" translatable="false">拒否しますか</string>
+    <string name="tab3_btn_3_txt" translatable="false">受取しました</string>
+    <string name="tab3_btn_4_txt" translatable="false">拒否しました</string>
+    <string name="tab3_btn_3_hint" translatable="false">メッセージを選択してください</string>
+    <string name="tab3_no_message_txt" translatable="false">メッセージがありません</string>
+
+    <!--    沽清-->
+    <string name="tab4_tv_1" translatable="false">在庫</string>
+    <string name="tab4_btn_1" translatable="false">更新</string>
+    <string name="tab4_item" translatable="false">品切れ</string>
+    <string name="tab4_hint" translatable="false">クリアしますか</string>
+    <string name="tab4_hint_1_txt" translatable="false">正しい数を入力してください</string>
+
+    <!--    账单-->
+    <string name="tab5_tv_1" translatable="false">注文時間</string>
+    <string name="tab5_btn_1" translatable="false">注文リスト</string>
+    <string name="tab5_btn_2" translatable="false">領収書</string>
+    <string name="tab5_tableNumber" translatable="false">テーブル</string>
+    <string name="tab5_peopleNumber" translatable="false">人数</string>
+    <string name="tab5_hint" translatable="false">注文書を選んでください</string>
+    <string name="tab5_no_data" translatable="false">会計履歴がありません</string>
+
+    <!--    弹框-->
+    <string name="dailog_hour" translatable="false">時</string>
+    <string name="dailog_mins" translatable="false">分</string>
+    <string name="riji_hint_1" translatable="false">スタッフを選んでください</string>
+    <string name="riji_hint_2" translatable="false">金額を入力してください</string>
+    <string name="riji_hint_3" translatable="false">正しい金額を入力してください</string>
+
+    <string name="setting_dayinji_1" translatable="false">プリンター IP:</string>
+    <string name="setting_dayinji_2" translatable="false">接続失敗</string>
+    <string name="setting_dayinji_3" translatable="false">プリンタIPが存在しないか、プリンタが占有されている</string>
+</resources>

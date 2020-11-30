@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+    </data>
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/block_bg"
+                android:orientation="vertical">
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/guqing"
+                        android:textColor="@color/text_bg"
+                        android:textSize="15dp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/listbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tab1_term"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/tab1_Varieties"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="@string/tab4_tv_1"
+                        android:textColor="@color/text_bg"
+                        android:textSize="11dp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lft4_list"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+
+                <LinearLayout
+                    android:id="@+id/tab1_status_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/clear_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/empty"
+                        android:text="@string/qingkong"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                    <TextView
+                        android:id="@+id/update_btn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/refresh"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/tab4_btn_1"
+                        android:drawablePadding="5dp"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="@color/ordertv"/>
+                </LinearLayout>
+
+            </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+
+</layout>

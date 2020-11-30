@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20000000">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/btn_dialog_date_cancel"
+            android:text="取消"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/btn_dialog_date_decide"
+            android:gravity="right"
+            android:text="完成"
+            android:textColor="@color/com_ycuwq_datepicker_selectedTextColor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <com.jydp.obqr.picker.StaffPicker
+            android:id="@+id/data_picker_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.jydp.obqr.picker.StaffPicker>>
+
+
+
+
+</LinearLayout>

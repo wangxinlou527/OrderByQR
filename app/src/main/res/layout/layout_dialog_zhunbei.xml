@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/zhunbei_rl"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="290dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E9C7A1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_zhunbei_tv_1"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <EditText
+                android:id="@+id/dailog_money_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:background="@drawable/bg_ed"
+                android:inputType="number"
+                android:textSize="@dimen/zhunbeitxt"
+                android:padding="6dp"
+                android:textColor="@color/ordertv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/zhunbeitxt"
+                android:text="@string/setting_zhunbei_tv_2"
+                android:textColor="@color/ordertv"/>
+
+            <TextView
+                android:id="@+id/dailog_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:textSize="@dimen/zhunbeitxt"
+                android:background="@drawable/bg_ed"
+                android:padding="6dp"
+                android:textColor="@color/ordertv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/setting_zhunbei_tv_3"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <LinearLayout
+                android:id="@+id/dailog_ll"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:padding="6dp"
+                android:background="@drawable/bg_ed">
+                <EditText
+                    android:id="@+id/dailog_content_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/zhunbeitxt"
+                    android:background="@null"
+                    android:textColor="@color/ordertv"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_no"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#E9C7A1"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yes"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

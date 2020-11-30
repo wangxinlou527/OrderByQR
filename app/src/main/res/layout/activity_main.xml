@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bigbg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp">
+
+            <RadioGroup
+                android:id="@+id/main_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/tv1"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/take_food"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/reserve"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/message"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp"
+ />
+
+
+                <RadioButton
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/guqing"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/nothing"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/setting"
+                    android:textColor="@color/tab1_bg_one"
+                    android:textSize="14dp" />
+
+            </RadioGroup>
+
+
+            <ImageView
+                android:id="@+id/message_mk"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/message_cir"
+                app:layout_constraintRight_toRightOf="@id/main_rg"
+                app:layout_constraintTop_toTopOf="@id/main_rg"
+                app:layout_constraintBottom_toBottomOf="@+id/main_rg"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.fragment.app.FragmentTabHost
+            android:id="@+id/frag_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_weight="7" />
+
+        <androidx.fragment.app.FragmentTabHost
+            android:id="@+id/frag_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="11" />
+
+
+        <LinearLayout
+            android:id="@+id/set_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/zhunbei_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_btn_bg_1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/reserve" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setting_zhunbei"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/settingtxt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/riji_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_btn_bg_2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/turnover" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setting_riji"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/settingtxt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yuyan_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_btn_bg_3"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/language" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setting_yuyan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/settingtxt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/dayin_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_btn_bg_4"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/print_settings" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setting_printer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/settingtxt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tuichu_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_btn_bg_5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/logout" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/setting_logout"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/settingtxt" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settingmar"
+                    android:layout_marginTop="@dimen/settingmar2"
+                    android:layout_marginRight="@dimen/settingmar"
+                    android:layout_marginBottom="@dimen/settingmar2"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

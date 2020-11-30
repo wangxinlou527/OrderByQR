@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+    </data>
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/block_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="@string/tab3_BookingForm"
+                android:textColor="@color/text_bg"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#8B7159" />
+
+            <LinearLayout
+                android:id="@+id/lft2_1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/taohua"
+                        android:drawablePadding="10dp"
+                        android:text="@string/tab1_tableNumber"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/taohua"
+                        android:drawablePadding="10dp"
+                        android:text="@string/tab1_peopleNumber"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:drawableLeft="@mipmap/taohua"
+                    android:drawablePadding="10dp"
+                    android:text="@string/tab1_phone"
+                    android:textColor="@color/ordertv"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/tab2_time"
+                    android:textColor="@color/ordertv"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:drawablePadding="10dp"
+                    android:text="@string/tab1_note"
+                    android:textColor="@color/ordertv"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lft2_2_ll"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:padding="5dp"
+                    android:text="@string/tab3_new_Contacts"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <EditText
+                    android:id="@+id/lft2_name_ed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_name_ed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:imeOptions="actionDone"
+                    android:text="@string/tab3_new__ContactsPhone"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <EditText
+                    android:id="@+id/lft2_tel_ed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_name_ed"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_tel_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_tel_ed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/tab3_new__RemarksTime"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <TextView
+                    android:id="@+id/lft2_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_tel_ed"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_time_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/tab3_new__people"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <EditText
+                    android:id="@+id/lft2_people_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_time_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_people_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:imeOptions="actionDone"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_people_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/tab3_new__table"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <TextView
+                    android:id="@+id/lft2_seat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_people_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_seat_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_seat_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/tab3_new__Remarks"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <EditText
+                    android:id="@+id/lft2_beizhu_ed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:imeOptions="actionDone"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_seat_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:hint="@string/tab3_hint__Remarks"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_beizhu_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <TextView
+                    android:id="@+id/lft2_status_2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_beizhu_ed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/tab3_new__State"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+
+                <TextView
+                    android:id="@+id/lft2_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_beizhu_ed"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:maxWidth="200dp"
+                    android:textSize="@dimen/lft2tvsize"
+                    android:textColor="@color/lft2tv"/>
+
+                <View
+                    android:id="@+id/lft2_status_line"
+                    app:layout_constraintTop_toBottomOf="@+id/lft2_status_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/lft2_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/greay" />
+
+                <LinearLayout
+                    android:id="@+id/lft2_btn_1_ll"
+                    android:layout_below="@+id/lft2_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/add_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@mipmap/new_book"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab3_New_Reserve"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lft2_btn_2_ll"
+                    android:visibility="gone"
+                    android:layout_below="@+id/lft2_line"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+
+                    <TextView
+                        android:id="@+id/lft2_no_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableTop="@mipmap/icon_cancel_order"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab2_btn_1"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/lft2_ok_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableTop="@mipmap/confirm"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/tab2_btn_2"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+
+</layout>

@@ -1,0 +1,86 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 取消白屏 -->
+        <item name="android:windowBackground">@drawable/main_bitmap_splash_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:windowBackground">@drawable/main_bitmap_splash_bg</item>-->
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- ActionMode覆盖Actionbar，不顶下来 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 取消白屏 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <!-- 窗口背景颜色 -->
+        <item name="android:windowBackground">@drawable/main_bitmap_splash_bg</item>
+    </style>
+
+    <!-- 啟動頁去除白屏 -->
+    <style name="CustomTheme.FullscreenTransparent" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/main_bitmap_splash_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+
+    <style name="CustomDialog_2" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="NewCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="NewCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_2_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="button_tag_style">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:layout_gravity">center_vertical</item>-->
+        <item name="android:background">@drawable/rb_selector</item>
+
+    </style>
+
+    <!--picker-->
+    <style name="DatePickerBottomDialog" parent="android:Theme.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="DatePickerDialogAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/com_ycuwq_datepicker_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/com_ycuwq_datepicker_dialog_out</item>
+    </style>
+
+</resources>

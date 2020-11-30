@@ -1,0 +1,81 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_tab_height">51.0dp</dimen>
+    <dimen name="text_drawable_height">30.0dip</dimen>
+    <dimen name="text_drawable_width">30.0dip</dimen>
+
+
+    <dimen name="driver1dp">1dp</dimen>
+    <dimen name="driverdp">0.5dp</dimen>
+
+    <dimen name="titlesize12">12sp</dimen>
+    <dimen name="titlesize6">6sp</dimen>
+    <dimen name="titlesize14">14sp</dimen>
+    <dimen name="titlesize13">13sp</dimen>
+    <dimen name="titlesize16">16sp</dimen>
+    <dimen name="titlesize18">18sp</dimen>
+    <dimen name="titlesize10">10sp</dimen>
+    <dimen name="titlesize15">15sp</dimen>
+    <dimen name="titlesize20">20sp</dimen>
+    <dimen name="titlesize25">25sp</dimen>
+    <dimen name="titlesize8">8sp</dimen>
+    <dimen name="titlesize30">30sp</dimen>
+
+    <dimen name="margin0">0dp</dimen>
+    <dimen name="margin05">0.5dp</dimen>
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin3">3dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin7">7dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin35">35dp</dimen>
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin45">45dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="margin65">65dp</dimen>
+    <dimen name="margin70">70dp</dimen>
+    <dimen name="margin75">75dp</dimen>
+    <dimen name="margin80">80dp</dimen>
+    <dimen name="margin90">90dp</dimen>
+    <dimen name="margin95">95dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="margin110">110dp</dimen>
+    <dimen name="margin120">120dp</dimen>
+    <dimen name="margin130">130dp</dimen>
+    <dimen name="margin140">140dp</dimen>
+    <dimen name="margin150">150dp</dimen>
+    <dimen name="margin180">180dp</dimen>
+    <dimen name="margin200">200dp</dimen>
+    <dimen name="margin250">250dp</dimen>
+
+    <dimen name="lft2tvsize">11sp</dimen>
+
+    <!-- picker -->
+    <dimen name="WheelItemTextSize">14sp</dimen>
+    <dimen name="WheelSelectedItemTextSize">20sp</dimen>
+    <dimen name="WheelItemSpace">12dp</dimen>
+    <dimen name="WheelIndicatorSize">2dp</dimen>
+    <dimen name="WheelMargins">8dp</dimen>
+    <dimen name="WheelItemHeightSpace">16dp</dimen>
+    <dimen name="WheelItemWidthSpace">32dp</dimen>
+    <dimen name="messageszie">10sp</dimen>
+    <dimen name="zhangdantxt">10sp</dimen>
+    <dimen name="settingtxt">15sp</dimen>
+    <dimen name="settingmar">25dp</dimen>
+    <dimen name="settingmar2">25dp</dimen>
+    <dimen name="zhunbeitxt">11sp</dimen>
+    <dimen name="btn_width">75dp</dimen>
+</resources>

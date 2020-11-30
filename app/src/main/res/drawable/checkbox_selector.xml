@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:state_checked="true"-->
+<!--        android:drawable="@drawable/shopping_clicked"/>&lt;!&ndash;设置选中图片&ndash;&gt;-->
+<!--    <item android:state_checked="false"-->
+<!--        android:drawable="@drawable/shopping_unclicked" />&lt;!&ndash;设置未选中图片&ndash;&gt;-->
+
+    <item android:state_checked="true"
+        android:drawable="@mipmap/item_checked_2"/><!--设置选中图片-->
+    <item android:state_checked="false"
+        android:drawable="@mipmap/item_no_check_2" /><!--设置未选中图片-->
+</selector>

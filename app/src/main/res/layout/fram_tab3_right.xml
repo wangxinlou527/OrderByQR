@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+    </data>
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_tag"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@mipmap/title_styles">
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginRight="4dp"-->
+                <!--                    android:layout_toLeftOf="@+id/iv_hard"-->
+                <!--                    android:src="@mipmap/right_icon_zd_nor" />-->
+
+                <TextView
+                    android:id="@+id/iv_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/message"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab3_hint"
+                        android:textSize="10sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/message_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btn_1"
+                            android:layout_width="55dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/radiobutton_textcolor"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawablePadding="0dp"
+                            android:gravity="center"
+                            android:text="@string/tab3_btn_1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/btn_2"
+                            android:layout_width="55dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/radiobutton_textcolor"
+                            android:button="@null"
+                            android:drawablePadding="0dp"
+                            android:gravity="center"
+                            android:text="@string/tab3_btn_2"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#20000000" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/rt3_main_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/rt3_img"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:drawableTop="@mipmap/no_message"
+                android:text="@string/tab3_no_message_txt"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:textColor="@color/ordertv"/>
+        </LinearLayout>
+
+
+
+    </www.linwg.org.lib.LCardView>
+</layout>

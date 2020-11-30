@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/message_ll"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/taohua"
+        android:textColor="@color/ordertv"
+        android:layout_marginLeft="5dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/messageszie"/>
+    <TextView
+        android:id="@+id/item_seat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textColor="#A53D41"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/messageszie" />
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/messageszie"
+        android:textColor="@color/ordertv"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bg_3"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:paddingLeft="8dp"-->
+<!--        android:paddingRight="8dp"-->
+<!--        android:paddingTop="3dp"-->
+<!--        android:paddingBottom="3dp"-->
+<!--        android:text="马上处理"-->
+<!--        />-->
+
+</LinearLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dailog_rl"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E9C7A1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_1"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <TextView
+                android:id="@+id/dailog_totle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_2"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <TextView
+                android:id="@+id/dailog_zhunbei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_zhunbei_tv_2"
+                android:textSize="@dimen/zhunbeitxt"
+                android:minWidth="50dp"
+                android:textColor="@color/ordertv"/>
+
+            <TextView
+                android:id="@+id/dailog_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg_2_ed"
+                android:textSize="@dimen/zhunbeitxt"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingRight="2dp"
+                android:textColor="@color/ordertv"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_3"
+                android:textSize="@dimen/zhunbeitxt"
+                android:minWidth="50dp"
+                android:textColor="@color/ordertv"/>
+
+            <EditText
+                android:id="@+id/dailog_money_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg_2_ed"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="@dimen/zhunbeitxt"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingRight="2dp"
+                android:textColor="@color/ordertv"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_zhunbei_tv_3"
+                android:minWidth="50dp"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <EditText
+                android:id="@+id/dailog_content_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="10"
+                android:background="@drawable/bg_2_ed"
+                android:textSize="@dimen/zhunbeitxt"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingRight="2dp"
+                android:textColor="@color/ordertv"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_4"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <com.jydp.obqr.view.SlideButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_5"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/dailog_dayin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_6"
+                android:text="@string/setting_riji_tv_6"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/zhunbeitxt" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_riji_tv_7"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/dailog_cash_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/zhunbeitxt"
+                android:textColor="@color/ordertv"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_no"
+                android:gravity="center"
+                android:textColor="#E9C7A1"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yes"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

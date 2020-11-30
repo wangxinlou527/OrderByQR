@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#FAFAFA</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colortab">#1d82d2</color>
+    <color name="colortab_">#ffffff</color>
+    <color name="colorNavigationSelectColor">#108ee8</color>
+    <color name="colorUnSelectColor">#333333</color>
+    <color name="colorNavigationUnSelectColor">#8E8E93</color>
+    <color name="colorToolbarOne">#1E82D2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorText">#1d82d2</color>
+    <color name="notice_color1">#666666</color>
+    <color name="notice_color2">#999999</color>
+    <color name="color_tab_unselect">#030303</color>
+    <color name="orange">#E7602F</color>
+    <color name="generText">#dedede</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+    <color name="log_bg">#B78B4F</color>
+    <color name="dialog_load_bg">#66000000</color><!-- 加载框背景-->
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="text_bg">#FF000000</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    <color name="cut_line">#E7E7E7</color>
+    <color name="black">#484848</color>
+    <color name="tab1_bg_one">#725133</color>
+    <color name="tab6_bg1">#DCB480</color>
+    <color name="greay">#c7c7c7</color><!-- 加载框背景-->
+    <color name="greay1">#b6b6b6</color><!-- 加载框背景-->
+    <color name="listbg">#F7F7F7</color>
+    <color name="color_4139">#FFBA4139</color>
+    <color name="tab1_bg">#FFF8F8F8</color>
+    <color name="tab6_bg4">#725133</color>
+    <color name="tab1_jia_bg">#E9C7A1</color>
+    <color name="tab1_bg_">#FFF8EB</color>
+    <color name="clr_normal">#ff6501</color>
+    <color name="clr_pressed">#a44100</color>
+    <color name="red1">#ff9999</color>
+    <color name="red2">#ff00ff</color>
+    <color name="color_100">#222222</color>
+    <color name="color_002">#ff9700</color>
+    <color name="color_106">#e5e5e5</color>
+    <color name="color_107">#f2f3f4</color>
+    <color name="color_109">#ffffffff</color>
+    <color name="color_001">#1aa1fb</color>
+    <color name="sp_bg">#EEEEEE</color>
+    <color name="btn_clickable">#1C1C1C</color>
+    <color name="menu_item_press">#6b6863</color>
+    <color name="menu_text_press">#fefefe</color>
+    <color name="menu_item_normal">#8f8c87</color>
+    <color name="menu_text_normal">#dddddd</color>
+    <color name="green">#FF34A350</color>
+    <color name="background">#f1f1f1</color>
+
+    <color name="ordertv">#333333</color>
+    <color name="seattv">#333333</color>
+    <color name="color_blue">#1777CB</color>
+    <color name="dialog_red">#fa7268</color>
+    <color name="lft2tv">#333333</color>
+    <color name="zhangdantv">#333333</color>
+
+    <color name="com_ycuwq_datepicker_selectedTextColor">#33aaff</color>
+    <color name="com_ycuwq_datepicker_divider">#cccccc</color>
+
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="titleBar">#C80064</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

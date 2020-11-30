@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+    </data>
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_tag"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@mipmap/title_styles">
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginRight="4dp"-->
+                <!--                    android:layout_toLeftOf="@+id/iv_hard"-->
+                <!--                    android:src="@mipmap/right_icon_zd_nor" />-->
+
+                <TextView
+                    android:id="@+id/iv_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tab3_BookingForm"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/job_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/radiobutton_textcolor"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/tab2_stutas_1"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/radiobutton_textcolor"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/tab2_stutas_2"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/btn_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/radiobutton_textcolor"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/tab2_stutas_3"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/tab1_tableNumber"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/rl2_quanbu_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tab2_zhuohaoyilan"
+                        android:minWidth="40dp"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/tab2_telname"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/rt2_key_ed"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/tab2_tel_hint"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/rl2_queding_btn"
+                        android:layout_width="45dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/queren_btn_shape"
+                        android:gravity="center"
+                        android:text="@string/tab2_queren"
+                        android:textColor="@color/ordertv"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/rt2_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="11"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rl2_yuding_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/page_1_btn"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/page_1_btn_shape"
+                                android:gravity="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/rt2_page_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/page_2_btn"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="50dp"
+                                android:background="@drawable/page_2_btn_shape"
+                                android:gravity="center"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/rt2_txt"
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="11"
+                        android:drawableTop="@mipmap/no_yuding"
+                        android:text="@string/tab2_no_yuding_txt"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:padding="0dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/ordertv"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rl2_date_rv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="2.3" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </www.linwg.org.lib.LCardView>
+</layout>

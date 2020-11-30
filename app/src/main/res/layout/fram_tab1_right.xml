@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jydp.obqr.viewmodel.BillViewModel" />
+
+    </data>
+
+
+    <www.linwg.org.lib.LCardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@color/greay1"
+        app:shadowFluidShape="linear"
+        app:shadowSize="10dp"
+        app:shadowStartAlpha="300"
+        app:yOffset="-5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_tab1_selt_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_tag"
+                android:layout_width="500dp"
+                android:layout_height="48dp"
+                android:background="@mipmap/title_styles">
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginRight="4dp"-->
+                <!--                    android:layout_toLeftOf="@+id/iv_hard"-->
+                <!--                    android:src="@mipmap/right_icon_zd_nor" />-->
+
+                <TextView
+                    android:id="@+id/iv_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tab1_zhodan"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_tag"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:id="@+id/rgt_diancai_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_tag"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rgt_diancai_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:id="@+id/rgt_diancai_mian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_jiezhang_cl"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_tag"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/rl_money_tv_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab1_pay"
+                    android:textSize="12sp"
+                    android:textColor="@color/ordertv"/>
+
+                <TextView
+                    android:id="@+id/rl_money_tv_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/rl_money_tv_1"
+                    app:layout_constraintLeft_toRightOf="@+id/rl_money_tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="@color/ordertv"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rl_money_tv_3"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_money_tv_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab1_taxation"
+                    android:textSize="12sp"
+                    android:textColor="@color/ordertv"/>
+
+                <TextView
+                    android:id="@+id/rl_money_tv_4"
+                    app:layout_constraintBottom_toBottomOf="@+id/rl_money_tv_3"
+                    app:layout_constraintLeft_toRightOf="@+id/rl_money_tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="@color/ordertv"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rl_money_tv_5"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_money_tv_3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/tab1_pay_net"
+                    android:textColor="#FD8084"/>
+
+                <TextView
+                    android:id="@+id/rl_money_tv_6"
+                    app:layout_constraintBottom_toBottomOf="@+id/rl_money_tv_5"
+                    app:layout_constraintLeft_toRightOf="@+id/rl_money_tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="#FD8084"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/shoukuan_btn"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rl_money_tv_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/rl_money_tv_5"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/login_btn_shape"
+                    android:gravity="center"
+                    android:text="@string/tab1_pay_rece"
+                    android:layout_marginRight="26dp"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/shoukuan_money"
+                    app:layout_constraintRight_toLeftOf="@+id/shoukuan_btn"
+                    app:layout_constraintBottom_toBottomOf="@+id/shoukuan_btn"
+                    app:layout_constraintTop_toTopOf="@+id/shoukuan_btn"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:hint="@string/tab1_hint_money"
+                    android:textSize="11sp"
+                    android:inputType="number"
+                    android:textColor="@color/ordertv"/>
+
+                <View
+                    android:id="@+id/rl_line"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_money_tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_coupon_rv"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_line"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/rl_pay_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_coupon_rv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab1_pay_type"
+                    android:textSize="12sp"
+                    android:textColor="@color/ordertv"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_pay_rv"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_pay_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/flt_jiezhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:drawableTop="@mipmap/fljiezhang"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:scaleType="center"
+                    android:text="@string/tab1_jiezhang"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dp_10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/flt_diancai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin30"
+                    android:drawableTop="@mipmap/fldiancai"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/tab1_diancai"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dp_10"
+                    android:tooltipText="@string/tab1_diancai"
+                    app:layout_constraintBottom_toBottomOf="@+id/flt_jiezhang"
+                    app:layout_constraintRight_toLeftOf="@+id/flt_jiezhang" />
+
+                <TextView
+                    android:id="@+id/flt_zhaodan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin30"
+                    android:layout_toLeftOf="@+id/flt_diancai"
+                    android:drawableTop="@mipmap/flzhaodan"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:scaleType="center"
+                    android:text="@string/tab1_zhodan"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dp_10"
+                    app:layout_constraintBottom_toBottomOf="@+id/flt_diancai"
+                    app:layout_constraintRight_toLeftOf="@+id/flt_diancai" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </www.linwg.org.lib.LCardView>
+</layout>
